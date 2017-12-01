@@ -3,6 +3,7 @@ package com.resurs.hello;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import com.resurs.hello.service.HelloService;
@@ -33,6 +34,11 @@ public class HelloApplication {
             Salutation salutation = helloService.getSalutationForUser("Julia");
             log.info(salutation.getMessage());
         }
+    }
+
+    @Bean
+    public HelloService helloService() {
+        return new HelloService("My bean say hello to");
     }
 
 }
