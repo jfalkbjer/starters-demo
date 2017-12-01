@@ -1,2 +1,2 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.resurs.hello.service.autoconfigure.HelloServiceAutoConfiguration
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#com.resurs.hello.service.autoconfigure.HelloServiceAutoConfiguration

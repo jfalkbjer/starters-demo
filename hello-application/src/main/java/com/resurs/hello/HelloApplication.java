@@ -6,10 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 
 import com.resurs.hello.service.HelloService;
+import com.resurs.hello.service.autoconfigure.EnableHelloService;
 import com.resurs.hello.service.model.Salutation;
 
 import lombok.extern.slf4j.Slf4j;
 
+@EnableHelloService
 @Slf4j
 @SpringBootApplication
 public class HelloApplication {
