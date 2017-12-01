@@ -32,5 +32,4 @@ dependencies {
 	compile('com.resurs.starter:hello-service-spring-boot-starter:0.0.1-SNAPSHOT')
 	compile('org.springframework.boot:spring-boot-starter')
 	compileOnly('org.projectlombok:lombok')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
