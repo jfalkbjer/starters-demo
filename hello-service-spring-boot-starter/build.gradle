@@ -30,6 +30,7 @@ repositories {
 dependencies {
 	compile('com.resurs:hello-service:0.0.1-SNAPSHOT')
 	compile('org.springframework.boot:spring-boot-starter')
+	compileOnly('org.springframework.boot:spring-boot-configuration-processor')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
