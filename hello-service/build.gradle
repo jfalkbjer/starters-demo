@@ -1,0 +1,31 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+group = 'com.resurs'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+compileJava.dependsOn(processResources)
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compileOnly('org.projectlombok:lombok:1.16.18')
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
